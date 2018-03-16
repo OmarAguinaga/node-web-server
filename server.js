@@ -51,6 +51,11 @@ app.get("/help", (req, res) => {
     title: "help Page"
   });
 });
+app.get("/proyects", (req, res) => {
+  res.render("proyects", {
+    title: "Proyects Page"
+  });
+});
 
 app.get("/bad", (req, res) => {
   res.send({
